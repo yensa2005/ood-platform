@@ -1,0 +1,64 @@
+@mixin color($color) {
+    color: $color;
+}
+
+@mixin background($bg) {
+    background: $bg;
+}
+
+@mixin width($w) {
+    width: $w;
+}
+
+@mixin display($dp) {
+    display: $dp;
+}
+
+@mixin margin($mg) {
+    margin: ($mg);
+}
+
+@mixin mgb($mgb) {
+    margin-bottom: ($mgb);
+}
+
+@mixin mgt($mgt) {
+    margin-top: $mgt;
+}
+
+@mixin mgl($mgl) {
+    margin-left: $mgl;
+}
+
+@mixin mgr($mgr) {
+    margin-left: $mgr;
+}
+
+@mixin padding($pd) {
+    padding: $pd;
+}
+
+@mixin colorVsfont($color, $fontsize) {
+    color: $color;
+    font-size: $fontsize;
+}
+
+@mixin ColorVsFontWeight($Color, $FontWeight) {
+    color: $Color;
+    font-weight: $FontWeight;
+}
+
+@mixin FontVsFontWeight($font, $FontWeight) {
+    font-size: $font;
+    font-weight: $FontWeight;
+}
+
+@mixin table {
+    transform: scale(1.05);
+    transition: all 0.3s linear;
+}
+
+@mixin center {
+    border: none;
+    outline: none;
+}

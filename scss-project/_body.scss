@@ -1,0 +1,293 @@
+.content-blue {
+    color: $BlueColor;
+}
+
+.fa-check {
+    color: $BlueColor;
+}
+
+.content-list {
+    list-style-type: none;
+    li {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+#services {
+    background-color: $GrayColor;
+    .container {
+        @include padding(120px 0px);
+        .row {
+            .content {
+                display: grid;
+                justify-items: center;
+            }
+            .content-center {
+                border-left: 1px solid #dbdbdb !important;
+                border-right: 1px solid #dbdbdb !important;
+                @media only screen and (max-width: 992px) {
+                    border: none !important;
+                }
+            }
+        }
+    }
+}
+
+#solution {
+    .container {
+        @include padding(50px 0px);
+        @media only screen and (max-width: 1066px) {
+            padding-left: 50px;
+        }
+        .row {
+            .solution-content {
+                @include padding(170px 0px);
+                @media only screen and (max-width: 992px) {
+                    @include padding(170px 0px 50px);
+                }
+            }
+            .solution-img {
+                background-image: url("/assets/images/solution-bg.png");
+                background-repeat: no-repeat;
+                background-position-y: bottom;
+                background-size: 100%;
+                .row {
+                    @include padding(0px 30px);
+                    height: 100%;
+                    .card-content {
+                        background-color: $WhiteColor;
+                        box-shadow: 0 0rem 2rem rgba(22, 28, 45, 0.05), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.05);
+                        transform: translate3d(0, -3px, 0);
+                        @include padding(30px 30px 50px);
+                        border-radius: 6px;
+                    }
+                    .card-content-right {
+                        display: grid;
+                        align-items: end;
+                        align-content: end;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#optimal {
+    background-color: $GrayColor;
+    .container {
+        @include padding(50px 0px);
+        .row {
+            .optimal-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+#support {
+    background-color: $WhiteColor;
+    .container {
+        @include padding(50px 0px);
+        .row {
+            .support-content {
+                @include padding(70px 0px);
+                @media only screen and (max-width: 992px) {
+                    @include padding(170px 0px 50px);
+                }
+            }
+            .support-img {
+                .row {
+                    height: 100%;
+                    .card-content {
+                        background-color: $WhiteColor;
+                        box-shadow: 0 0rem 2rem rgba(22, 28, 45, 0.05), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.05);
+                        transform: translate3d(0, -3px, 0);
+                        border-radius: 6px;
+                    }
+                    .card-content-left {
+                        display: grid;
+                        align-items: end;
+                        align-content: end;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#client {
+    background-color: $GrayColor;
+    .container {
+        @include padding(50px 0px);
+        .row {
+            .client-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+#revenue {
+    background-color: $WhiteColor;
+    .container {
+        .row {
+            .revenue-content {
+                @include padding(70px 0px);
+                @media only screen and (max-width: 992px) {
+                    @include padding(170px 0px 50px);
+                }
+            }
+            .revenue-img {
+                .row {
+                    height: 100%;
+                    .card-content {
+                        background-color: $WhiteColor;
+                        box-shadow: 0 0rem 2rem rgba(22, 28, 45, 0.05), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.05);
+                        transform: translate3d(0, -3px, 0);
+                        border-radius: 6px;
+                    }
+                    .card-content-center {
+                        display: grid;
+                        align-items: center;
+                        align-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#video {
+    background-image: url("/assets/images/video-bg.jpg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100%;
+    .container {
+        @include padding(0px);
+        img {
+            padding-top: 50px;
+            @include width(100%);
+        }
+    }
+}
+
+#screen {
+    background-image: url("/assets/images/screen-bg.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: 40%;
+    .container {
+        @include padding(50px 0px);
+        .screen-img {
+            display: flex;
+            justify-content: space-between;
+            @include padding(30px 0px);
+            img {
+                @include width(18%);
+                &:hover {
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+                    transform: translate3d(0, -3px, 0);
+                }
+            }
+        }
+    }
+}
+
+#partner {
+    background-color: $GrayColor;
+    .container {
+        @include padding(120px 0px);
+        .partner-img {
+            display: flex;
+            justify-content: space-between;
+            @include padding(30px 0px);
+            img {
+                @include width(18%);
+                box-shadow: 0 0rem 2rem rgba(22, 28, 45, 0.05), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.05);
+                transform: translate3d(0, -3px, 0);
+            }
+        }
+    }
+}
+
+#ood {
+    @include width(100%);
+    background: $bgse;
+    background: $Gradientbgse;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include padding(50px 0px);
+        .ood-content {
+            color: $WhiteColor;
+            width: 700px;
+        }
+        .ood-btn {
+            .btn-light {
+                background-color: $WhiteColor;
+                @include padding(10px 35px);
+                // &:hover {
+                //     border: 2px solid;
+                //     color: $WhiteColor;
+                //     background-color: none;
+                // }
+            }
+        }
+    }
+}
+
+#news {
+    .container {
+        @include padding(50px 0px);
+        .row {
+            h5 {
+                color: $BlueColor;
+            }
+        }
+        .news-card {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            .card {
+                width: 370px;
+                .card-body {
+                    .card-body-text {
+                        @include FontVsFontWeight(22px,
+                        600);
+                        @media only screen and (max-width: 992px) {
+                            @include FontVsFontWeight(18px, 600);
+                        }
+                        @media only screen and (max-width: 768px) {
+                            @include FontVsFontWeight(16px,
+                            600);
+                        }
+                    }
+                }
+                @media only screen and (max-width: 1200px) {
+                    width: 310px;
+                }
+                @media only screen and (max-width: 992px) {
+                    width: 230px;
+                }
+                @media only screen and (max-width: 768px) {
+                    width: 173px;
+                }
+                @media only screen and (max-width: 576px) {
+                    width: 100%;
+                    @include margin(20px 0px);
+                }
+            }
+            @media only screen and (max-width: 576px) {
+                display: grid;
+                justify-content: center;
+            }
+        }
+    }
+}

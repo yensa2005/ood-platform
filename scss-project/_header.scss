@@ -1,0 +1,63 @@
+header {
+    @include width(100%);
+    background: $bghr;
+    background: $Gradientbghr;
+    .container {
+        @include padding(0px);
+        .navbar-toggler {
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            .nav-item {
+                font-weight: 500;
+                .nav-link {
+                    @include padding(0 15px);
+                    @media only screen and (max-width: 979px) {
+                        text-align: center;
+                        @include padding(10px 0px);
+                    }
+                }
+            }
+        }
+    }
+    .d-flex {
+        .btn-outline-light {
+            color: #fff;
+            @include padding(10px 35px);
+            border: 2px solid;
+            &:hover {
+                color: $BlueColor;
+            }
+            @media only screen and (max-width: 1185px) {
+                @include mgr(10px);
+            }
+            @media only screen and (max-width: 979px) {
+                @include mgr(0px);
+            }
+        }
+        @media only screen and (max-width: 979px) {
+            justify-content: center;
+            @include padding(10px 0px);
+        }
+    }
+}
+
+#banner {
+    h2 {
+        @include FontVsFontWeight(39px, 700);
+        @include mgt(150px);
+    }
+    .banner-img {
+        img {
+            display: block;
+            @include mgl(auto);
+            @include mgr(auto);
+        }
+        @media only screen and (max-width: 979px) {
+            @include mgr(0px);
+        }
+    }
+}
