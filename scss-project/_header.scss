@@ -5,15 +5,16 @@ header {
     .container {
         @include padding(0px);
         .navbar-toggler {
-            color: #fff;
-            border: 2px solid #fff;
+            color: $WhiteColor;
+            border: 2px solid $WhiteColor;
         }
         .navbar-nav {
             display: flex;
             justify-content: center;
             .nav-item {
-                font-weight: 500;
                 .nav-link {
+                    color: $WhiteColor;
+                    font-weight: 500;
                     @include padding(0 15px);
                     @media only screen and (max-width: 979px) {
                         text-align: center;
@@ -23,24 +24,14 @@ header {
             }
         }
     }
-    .d-flex {
+    form {
         .btn-outline-light {
-            color: #fff;
+            color: $WhiteColor;
             @include padding(10px 35px);
             border: 2px solid;
             &:hover {
                 color: $BlueColor;
             }
-            @media only screen and (max-width: 1185px) {
-                @include mgr(10px);
-            }
-            @media only screen and (max-width: 979px) {
-                @include mgr(0px);
-            }
-        }
-        @media only screen and (max-width: 979px) {
-            justify-content: center;
-            @include padding(10px 0px);
         }
     }
 }

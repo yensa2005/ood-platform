@@ -1,20 +1,50 @@
 #footer {
+    background-image: url("/assets/images/footer-bg-01.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100%;
     .container {
+        @include padding(70px 0px);
         .row {
+            .footer-icon {
+                @include padding(30px 0px 0px);
+                a {
+                    @include padding(0px 10px);
+                    color: rgb(85, 85, 85);
+                }
+            }
             .footer-body-text {
-                @include FontVsFontWeight(21px, 600);
+                @include FontVsFontWeight(21px,
+                600);
             }
             .footer-list {
                 list-style-type: none;
                 li {
                     display: flex;
                     align-items: baseline;
+                    .footer-list-icon {
+                        color: $BlueColor;
+                    }
                     a {
                         color: rgb(85, 85, 85);
                         font-weight: 600;
                     }
                 }
             }
+        }
+    }
+    .footer-bottom {
+        background-color: rgba(255, 255, 255, 0.63);
+        p {
+            @include margin(0px);
+            @include padding(30px 0px 50px);
+        }
+        a {
+            opacity: 0.3;
+            width: 50px;
+            height: 50px;
+            float: right;
+            @include margin(20px 20px 0px 0px);
         }
     }
 }
